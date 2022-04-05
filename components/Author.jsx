@@ -10,13 +10,13 @@ const Author = ({ author }) => (
         unoptimized
         loader={grpahCMSImageLoader}
         alt={author.name}
-        height="100px"
-        width="100px"
+        height="200px"
+        width="200px"
         className="align-middle rounded-full"
         src={author.photo.url}
       />
     </div>
-    <h3 className="text-white mt-4 mb-4 text-xl font-bold">{author.name}</h3>
+    <h3 className="text-white mt-28 mb-4 text-xl font-bold">{author.name}</h3>
     <p className="text-white text-ls">{author.bio}</p>
   </div>
 );
