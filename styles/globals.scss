@@ -66,12 +66,14 @@ a {
   box-sizing: border-box;
 }
 
-.logo{
-    background-image: url('../public/Logo-big-two-removebg-preview.png');
-    width: 300px;
-    height: 100px;
+.img-container{
+  img{
+    width: 400px !important;
+    height: 150px !important;
     background-repeat: no-repeat;
     cursor: pointer;
+  }
+  
 }
 
 .nav{
