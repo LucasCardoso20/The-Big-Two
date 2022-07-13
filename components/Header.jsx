@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 import { getCategories } from '../services';
+import logo from '../public/logo.png'
+import Image from 'next/image'
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -15,9 +17,9 @@ const Header = () => {
   return (
     <div className="container flex mx-auto px-10 mb-8">
       <div className="border-b w-full inline-block border-white-400 py-8">
-        <div className="md:float-left block">
+        <div className="md:float-left block img-container">
           <Link href="/">
-            <div className='logo sm:flex justify-center'></div>
+            <Image src={logo} className='logo sm:flex justify-center'/>
           </Link>
         </div>
 
